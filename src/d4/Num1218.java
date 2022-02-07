@@ -56,7 +56,7 @@ public class Num1218 {
                     }
                 }
             }
-            if (stack.size() == 0 && answer == -1) {
+            if (stack.isEmpty() && answer == -1) {
                 answer = 1;
             } else {
                 answer = 0;

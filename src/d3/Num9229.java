@@ -22,7 +22,7 @@ public class Num9229 {
                 arr[i] = Integer.parseInt(st.nextToken());
             }
 
-            int max = Integer.MIN_VALUE;
+            int max = -1;
             int sum = 0;
 
             for (int i = 0; i < N - 1; i++) {
@@ -36,11 +36,7 @@ public class Num9229 {
                 }
             }
 
-            if (max == Integer.MIN_VALUE) {
-                System.out.println("#" + t + " " + "-1");
-            } else {
-                System.out.println("#" + t + " " + max);
-            }
+            System.out.println("#" + t + " " + max);
         }
     }
 }

@@ -55,13 +55,17 @@ public class Num3289_서로소집합 {
     }
 
     public static int findSet(int a){
+        // 부모가 자기 자신이면 끝(기저조건?)
         if (a == parents[a]) {
             return a;
         }
+        // 부모가 자기 자신이 아니면 부모로 findSet()을 재귀호출
         return parents[a] = findSet(parents[a]);
     }
 
     public static void union(int a, int b) {
+        // 최상위 부모(루트)를 다른 최상위 부모로 바꾸면(가리키게 하면)
+        // 결과적으로 합집합이되는 것
         int aRoot = findSet(a);
         int bRoot = findSet(b);
 
@@ -72,6 +76,8 @@ public class Num3289_서로소집합 {
     public static boolean isPossiblUnion(int a, int b) {
         int aRoot = findSet(a);
         int bRoot = findSet(b);
+
+        // 부모가 같으면 같은 집합에 있는거임
         if (aRoot == bRoot) {
             return false;
         } else {

@@ -21,7 +21,7 @@ public class Num3307_최장증가부분수열 {
             int[] arr = new int[N]; // 수열의 원소를 저장
             int[] dp = new int[N]; // 자신을 끝으로 하는 LIS 길이
 
-            Arrays.fill(dp, 1); //  // 자신 혼자 LIS 구성할 때의 길이 1로 초기화
+            Arrays.fill(dp, 1); // 자신 혼자 LIS 구성할 때의 길이 1로 초기화
 
             st = new StringTokenizer(br.readLine());
 

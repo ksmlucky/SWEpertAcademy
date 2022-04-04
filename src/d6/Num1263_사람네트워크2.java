@@ -27,9 +27,15 @@ public class Num1263_사람네트워크2 {
             // 경유지-->출발지-->목적지로 3중 루프 돌려야 정답
             for (int k = 0; k < N; ++k) {
                 for (int i = 0; i < N; ++i) {
-                    if (i == k) continue; // 출발지와 경유지가 같다면 다음 출발지
+                    if (i == k) {
+                        continue; // 출발지와 경유지가 같다면 다음 출발지}
+                    }
+
                     for (int j = 0; j < N; ++j) {
-                        if (i == j || k == j) continue; // 경유지와 목적지가 같거나 출발지가 곧 목적지라면 패스
+                        if (i == j || k == j) {
+                            continue; // 경유지와 목적지가 같거나 출발지가 곧 목적지라면 패스}
+                        }
+
                         if (adjMatrix[i][j] > adjMatrix[i][k] + adjMatrix[k][j]) {
                             adjMatrix[i][j] = adjMatrix[i][k] + adjMatrix[k][j];
                         }
@@ -50,6 +56,5 @@ public class Num1263_사람네트워크2 {
 
             System.out.println("#" + t + " " + min);
         }
-
     }
 }

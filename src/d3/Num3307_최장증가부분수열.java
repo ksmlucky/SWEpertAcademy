@@ -36,6 +36,7 @@ public class Num3307_최장증가부분수열 {
                         dp[i] = dp[j] + 1;
                     }
                 }
+
                 max = Math.max(max, dp[i]);
             }
 

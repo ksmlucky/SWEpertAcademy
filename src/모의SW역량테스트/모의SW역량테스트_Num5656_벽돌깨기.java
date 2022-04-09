@@ -9,6 +9,20 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+
+/**
+ 중복 순열 + 시뮬레이션
+
+ - 중복순열
+ go함수(실행함수)
+
+ - 시뮬
+ 벽돌 부시기 함수
+ 부서진 벽돌 아래로 내리기 함수
+ 남은 벽돌수 세기 함수
+ map 백업해놓기 함수(copy 함수)
+ */
+
 //BFS
 public class 모의SW역량테스트_Num5656_벽돌깨기 {
     static class Point {

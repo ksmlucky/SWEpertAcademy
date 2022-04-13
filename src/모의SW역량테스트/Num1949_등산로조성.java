@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class 모의SW역량테스트_Num1949_등산로조성 {
+public class Num1949_등산로조성 {
     static int[][] map;
     static boolean[][] visited; // 방문체크 배열
     static int N, K;

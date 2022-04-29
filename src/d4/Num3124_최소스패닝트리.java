@@ -1,3 +1,5 @@
+// 3124 - 최소 스패닝 트리
+
 package d4;
 
 import java.io.BufferedReader;
